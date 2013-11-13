@@ -561,7 +561,8 @@ public abstract class Controller {
 			else
 				urlParaArray = urlPara.split(URL_PARA_SEPARATOR);
 			
-			for (int i=0; i<urlParaArray.length; i++)
+			for (int i=0,len = urlParaArray.length ; i< len; i++)
+			
 				if ("".equals(urlParaArray[i]))
 					urlParaArray[i] = null;
 		}
